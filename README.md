@@ -1,3 +1,3 @@
 # Portfolio Project
 
-See how this <a href="https://blatko1.github.io/html-portfolio-project/" target="_blank">website</a> looks.
+See how this <a href="https://jazzy-macaron-cc8cd1.netlify.app/" target="_blank">website</a> looks.

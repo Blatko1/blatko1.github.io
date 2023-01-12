@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>O Rust-u</title>
+    <style>
+        #Main {
+            height: 900px;
+            width: 1000px;
+            background-color: bisque;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            float: left;
+            margin-left: -500px;
+            margin-top: -450px;
+            box-shadow: 0px 0px 29px #e09926;
+            border-radius: 9px
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(../assets/ferris.png);
+            background-repeat: repeat;
+            background-size: 10%;
+            background-position: center
+        }
+    </style>
+</head>
+
+<body style="background-color: aquamarine">
+    <div id="Main">
+        <div>
+            <div style="margin: 3px 0px 0px 10px; cursor: pointer; text-decoration: underline; color: darkslategrey; font-weight: 1000" onclick="location.href='../index.html';">
+                ⬅️ Na početnu
+            </div>
+            <div style="text-align: center; font-size: 30px; margin-top: 8px">
+                Rust - Programski Jezik
+            </div>
+        </div>
+
+        <div id="content" style="padding: 10px; margin-top: 15px">
+            <div style="width: 30%; float: right"><img src=../assets/rust.png width="88%"></div>
+            <div>
+                <p style="font-size: 17px">Rust je programski jezik niske razine (engl. low-level systems programming language). Rust
+                    kao programski jezik prvo se službeno pojavio 2010. godine od strane Mozilla-e što ga čini vrlo
+                    mladim. Glavni cilj Rust-a kao programskog jezika je biti memorijski siguran (engl. memory safe),
+                    nitno siguran (engl. thead safe).<br><br>
+
+                    Kako bi se to postiglo Rust uvodi koncepte kao što su vlasništvo (engl. ownership),
+                    posuđivanje (engl. borrowing), životni vijek (engl. lifetimes) i zbog toga većina pogrešaka (engl.
+                    error) u Rust-u se dogodi za vrijeme sastavljanja (engl. compile time) nego za vrijeme izvršavanja
+                    (engl. runtime).<br><br>
+
+                    Vlasništvo i životni vijek u Rust-u nam govori koji dio programa ili aplikacije je vlasnik kojeg
+                    dijela memorije, tj. u kojem dijelu memorije živi koja varijabla. Zbog toga u Rustu nema potrebe
+                    za vođenjem brige o visećim pokazivačima (engl. dangling pointers) i Rust nema sakupljača smeća
+                    (engl. garbage collector).<br><br>
+
+                    Rust sastavljač (engl. compiler) vodi brigu o tome koja funkcija ili koji kontekst trenutno ima
+                    vlasništvo nad kojim podatcima u bilo kojem trenutku i zbog toga nigdje u kôdu ne može se
+                    pristupiti podatcima koji nisu unutar trenutnog konteksta. Nakon što kontekst ili određena funkcija
+                    završi, svi podatci unutar nje su obrisani i memorija oslobođena.<br><br>
+
+                    Ovdje se dolazi do posuđivanja u Rust-u. Pošto su svi podatci i memorija usko vezani za
+                    funkciju ili nekakav opseg u kojem se trenutno nalaze, a često dolazi do potrebe za tim podatcima
+                    i izvan tih opsega treba postojati način kako doći do tih podataka tj. posuditi ih iz opsega u kojem
+                    se one nalaze.<br><br>
+                    Promjenjivo posuđivanje znači da funkcija koja je posudila podatak, može ga promijeniti, ali,
+                    nakon završetka s radom mora taj podatak i vratiti tamo odakle je posuđen. Jedno pravilo kod
+                    ovakvog posuđivanja podataka je da, ako je jedan podatak posuđen od roditeljske funkcije nijedna
+                    druga funkcija ga ne može posuditi dok on nije vraćen.<br><br>
+
+                    Nepromjenjivo posuđivanje znači da se posuđeni podatak može samo čitati bez bilo kakvog
+                    mijenjanja, ovdje, kod promjenjivog posuđivanja, prethodno pravilo ne vrijedi, što znači da se
+                    jedan podatak može posuditi ili jednom promjenjivo ili beskonačno puta nepromjenjivo.
+
+            </div>
+        </div>
+    </div>
+</body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1113977602495706" crossorigin="anonymous"></script></html>

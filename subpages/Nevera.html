@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="hr">
 
 <head>
+    <meta charset="utf-8">
     <title>Nevera Auto</title>
     <style>
         html {
@@ -16,27 +17,120 @@
 
         main {
             width: 60%;
-            min-height: 925px;
-            background-color: darkcyan;
+            min-height: 950px;
+            background-color: #008b96;
             margin: auto;
             text-align: justify;
             border-radius: 15px;
             box-shadow: 0px 0px 25px #cacf;
             padding: 3px;
         }
+        
+        #goBack {
+            margin: 10px 0px 0px 10px; 
+            cursor: pointer; 
+            color: darkslategrey; 
+            font-weight: 1000
+        }
+
         #naslov {
             text-align: center;
             margin: 0px;
+            font-size: 40px;
+            font-weight: 600
+        }
+        
+        #atributi {
+            float: left;
+            text-align: center;
+            margin: auto;
+            width: 45%;
+        }
+        #atributi tr, th, td {
+            border: 1px solid black;
+        }
+        #atributi table {
+            margin: 20px auto 10px auto;
+            padding: 10px;
+            font-size: 23px;
+            background-color: #017680;
+            border-radius: 7px;
+        }
+        
+        #proizvodi {
+            float: right;
+            margin: 20px 455px 0px 0px
         }
     </style>
 </head>
 
 <body>
     <main>
-        <div style="margin: 4px 0px 0px 10px; cursor: pointer; color: darkslategrey; font-weight: 1000" onclick="location.href='../index.html';">
+        <div id="goBack" onclick="location.href='../index.html';">
             ⬅️ Na početnu
         </div>
-        <div id="naslov"><h1>Nevera - Rimac Automobili</h1></div>
-        
+        <div id="naslov">
+            Nevera - Rimac Automobili
+        </div>
+        <img src="../assets/rimac_inner.webp" style="float: left; margin: 5px 23px 10px 15px; border-radius: 70px" width=460 alt="Rimac Nevera Interijer">
+        <article style="margin: 40px 15px 0px 15px; line-height: 1.4; font-size: 17.5px">
+            Rimac Automobili je hrvatska tvrtka za proizvodnju električkih vozila osnovana 2009. godine sa sjedištem u Svetoj Nedelji. Rimac Automobili je razvio i predstavio automobilski koncept električnog automobila Concept_One, koji je kasnije krenuo u serijsku proizvodnju. Prvi put je predstavljen svjetskoj javnosti 2011. godine na najvećoj svjetskoj izložbi automobila Internationale Automobil-Ausstellung u Frankfurtu.<br><br>
+
+            <h3>Povijest</h3>
+            Osnivač tvrtke Rimac Automobili je Mate Rimac, koji je pretvorio svoj stari BMW E30 u trkaće električko vozilo.<br>
+
+            Prvi primjerak modela Concept_One isporučen je u siječnju 2013. godine španjolskom kupcu, tvrtki Applus+ IDIADA. Automobil je dovršen u četiri mjeseca, a cijena je nepoznata.<br><br>
+
+            Svoj drugi komercijalni model Concept_One koji će biti proizveden u svega osam primjeraka, Rimac Automobili predstavili su na međunarodnom salonu automobila u Ženevi 1. ožujka 2016. godine. 14. svibnja 2019. objavljeno da je u sjedištu Rimac Automobila tvrtka Kia Motors, dio Hyundai Motor Group, potpisala ugovor o ulaganju u oko 600 milijuna kuna u Rimac Automobile. Razvijat će električni športski automobil sa središnje smještenim pogonom športske marke Hyundai N i hibridno vozilo visokih performanca s pogonom na vodik i električni pogon.
+        </article>
+        <div id="atributi">
+            <table>
+                <tr>
+                    <th colspan="2">Svojstva</th>
+                    <th>Broj</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Snaga (1.4 MW)</td>
+                    <td>1.914 HP</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Zakretni moment</td>
+                    <td>2.360 NM</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Ubrzanje</td>
+                    <td>0-100 KM/H</td>
+                    <td>1.97s</td>
+                </tr>
+                <tr>
+                    <td>0-300 KM/H</td>
+                    <td>9.3s</td>
+                </tr>
+                <tr>
+                    <td>402 METER TIME</td>
+                    <td>8.6s</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Max. brzina</td>
+                    <td>412 KM/H</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Kapacitet baterije</td>
+                    <td>120 KWH</td>
+                </tr>
+            </table>
+        </div>
+        <article id="proizvodi">
+            <h3>Proizvodi:</h3>
+            <ul>
+                <li>Concept_One</li>
+<li>Concept_S</li>
+<li>Rimac Nevera</li>
+<li>Volar-e</li>
+<li>Ampster</li>
+<li>Greyp G12</li>
+<li>Greyp G12S</li>
+            </ul>
+        </article>
     </main>
 </body></html>

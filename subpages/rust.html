@@ -3,27 +3,27 @@
 <head>
     <title>O Rust-u</title>
     <style>
-        #Main {
-            height: 900px;
-            width: 1000px;
-            background-color: bisque;
+        html {
+            font-family: Arial, sans-serif;
+        }
 
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            float: left;
-            margin-left: -500px;
-            margin-top: -450px;
+        #Main {
+            min-height: 850px;
+            width: 70%;
+            background-color: bisque;
+            text-align: justify;
+            margin: auto;
             box-shadow: 0px 0px 29px #e09926;
-            border-radius: 9px
+            border-radius: 9px;
+            padding: 3px;   
         }
 
         body {
-            font-family: Arial, sans-serif;
             background-image: url(../assets/ferris.png);
             background-repeat: repeat;
             background-size: 10%;
-            background-position: center
+            background-position: center;
+            background-attachment: fixed;
         }
     </style>
 </head>
@@ -31,7 +31,7 @@
 <body style="background-color: aquamarine">
     <div id="Main">
         <div>
-            <div style="margin: 3px 0px 0px 10px; cursor: pointer; text-decoration: underline; color: darkslategrey; font-weight: 1000" onclick="location.href='../index.html';">
+            <div style="margin: 3px 0px 0px 10px; cursor: pointer; color: darkslategrey; font-weight: 1000" onclick="location.href='../index.html';">
                 ⬅️ Na početnu
             </div>
             <div style="text-align: center; font-size: 30px; margin-top: 8px">
@@ -40,7 +40,7 @@
         </div>
 
         <div id="content" style="padding: 10px; margin-top: 15px">
-            <div style="width: 30%; float: right"><img src=../assets/rust.png width="88%"></div>
+            <div style="width: 30%; float: right; margin-left: 15px"><img src=../assets/rust.png width="88%"></div>
             <div>
                 <p style="font-size: 17px">Rust je programski jezik niske razine (engl. low-level systems programming language). Rust
                     kao programski jezik prvo se službeno pojavio 2010. godine od strane Mozilla-e što ga čini vrlo
@@ -79,5 +79,4 @@
         </div>
     </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1113977602495706" crossorigin="anonymous"></script>
-</body>
-</html>
+</body></html>
